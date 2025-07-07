@@ -1,4 +1,4 @@
-# 📰 FreeCodeCamp News Authors Project
+# 📰 News Authors Project
 
 This project demonstrates how to fetch and display author data from the [FreeCodeCamp News](https://freecodecamp.org/news) API. It focuses on using `fetch()` for HTTP requests, handling promises, and dynamically rendering data in a performant way using pagination.
 
@@ -109,28 +109,11 @@ Use `index` to keep track of pagination.
 
 ---
 
-### ✅ Step 11: Add "Show More" Button Functionality
-
-To improve the user experience, implement a "Show More" button that loads the next 8 authors on each click:
-
-```js
-document.getElementById("show-more-btn").addEventListener("click", () => {
-  startingIndex += 8;
-  endingIndex += 8;
-  displayAuthors(authorDataArr);
-});
-```
-
-Make sure to hide or disable the button when all authors are displayed.
-
----
-
 ## 💠 Features
 
 - Fetch data from external API
 - Use Promises (`fetch`, `.then()`, `.catch()`)
 - Display data in chunks (8 at a time)
-- Add "Show More" button for pagination
 - Handle errors properly
 - Dynamic rendering with destructured objects
 
@@ -146,9 +129,9 @@ https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json
 
 ## ✅ Next Steps
 
+- Add a "Show More" button to load more authors
 - Add search or filter functionality
 - Improve UI/UX with animations or transitions
-- Add loader/spinner during data fetch
 
 ---
 
